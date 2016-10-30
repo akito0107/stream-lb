@@ -1,6 +1,6 @@
 /* @flow */
 
-function main(hello /*:string*/) {
+function main(hello /* :string */) {
   console.log(hello)
 }
 

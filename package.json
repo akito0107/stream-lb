@@ -10,7 +10,11 @@
     "ava": "^0.16.0",
     "babel-eslint": "^7.1.0",
     "eslint": "^3.9.0",
+    "eslint-config-airbnb": "^12.0.0",
     "eslint-plugin-flowtype": "^2.25.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1",
     "flow-bin": "^0.34.0"
   }
 }
