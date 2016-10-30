@@ -1,0 +1,16 @@
+{
+  "name": "stream-lb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "flow": "flow; test $? -eq 0 -o $? -eq 2"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "babel-eslint": "^7.1.0",
+    "eslint": "^3.9.0",
+    "eslint-plugin-flowtype": "^2.25.0",
+    "flow-bin": "^0.34.0"
+  }
+}
