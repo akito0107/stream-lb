@@ -1,15 +1,13 @@
 /* @flow */
-const Transform = require('transform')
+const Transform = require('stream').Transform
 
 class WorkerStream extends Transform {
   constructor(options /* :Object */) {
     super(options)
     this.work = options.work
-    this.master = options.master
-    this.pipe(this.master)
   }
   
-  _transform(chunk, enc, cb) {
+  _transform(chunk /* :any */, enc /* :string */, cb /* :function */) {
     this.work(chunk, enc, cb)
   }
 }

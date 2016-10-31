@@ -5,9 +5,11 @@
   "license": "MIT",
   "scripts": {
     "flow": "flow; test $? -eq 0 -o $? -eq 2",
+    "watch:flow": "flow-watch",
     "test": "ava -v",
-    "watch:test": "ava --watch",
+    "watch:test": "ava --watch --timeout=2s",
     "lint": "eslint ./**/*/js --ignore-path node_modules",
+    "lint:src": "eslint ./src/**/*.js",
     "lint:test": "eslint ./test/**/*.js"
   },
   "devDependencies": {
@@ -20,6 +22,7 @@
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.4.1",
     "flow-bin": "^0.34.0",
+    "flow-watch": "^1.0.0",
     "power-assert": "^1.4.1"
   },
   "ava": {
